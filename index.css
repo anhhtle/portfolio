@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 40px;
+    background-color: #f9f0e6;
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 33.33%;
+    width: 25%;
+    background-color: #FCD7AD;
+}
+
+/*************** boxes ******************/
+
+#one, #two, #six, #eleven {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#one {
+    flex-direction: column;
+    font-size: 18pt;
+    color: #A57548;
+}
+
+#one div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5296A5;
+}
+
+/*********** color and patterns ***********/
+.light {
+    background-color: #F6C28B;
+}
+
+.dark {
+    background-color: #A57548;
+}
+
+.blue {
+    background-color: #82DDF0;
+}
+
+.dark-blue {
+    background-color: #5296A5;
+}
+
+.patterns1 {
+    background-image: url('./img/pattern1.png');
+    background-size: contain;
+}
+
+.patterns2 {
+    background-image: url('./img/pattern2.png');
+    background-size: contain;
+}
+
+.patterns3 {
+    background-image: url('./img/pattern3.gif');
+    background-size: contain;
+}
