@@ -3,37 +3,70 @@
 
 <head>
     <title>A.L. | Web Developer</title>
-    <meta name='description' content="Anh Le's Web Developer Portfolio Website">
-    <meta name='viewport' content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anh Le's Web Developer Portfolio Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index-responsive.css">
 </head>
 
 <body>
 
-    <section class='grid'>
-        <div id=one class='box'>
-            <div><span>A.L.</span></div>
+    <section class="grid">
+
+        <!-- first row  -->
+        <div id=one class="box">
+             <div><span>A.L.</span></div> 
             <p>Web Developer</p>
         </div>
-        <div id=two class='box blue'>About Me</div>
-        <div id=three class='box patterns1'></div>
-        <div id=four class='box blue'></div>
-
-        <div id=five class='box dark-blue'>Hello, I am Anh Le and this is my online portfolio</div>
-        <div id=six class='box light'>Projects</div>
-        <div id=seven class='box dark-blue'>
-            <p>Full-Stack Web Developer</p>
-            <p>Data Analyst</p>
-            <p>Sport Fans</p>
+        <div id=two class="box light">
+            <span id="two-img"></span>
+            <div class="underline-wrapper">
+                <div>
+                    <span>About Me</span>
+                    <span class="underline"></span>
+                </div>
+            </div>
         </div>
-        <div id=eight class='box patterns2'></div>
+        <div id=three class="box "></div>
+        <div id=four class="box light"></div>
 
-        <div id=nine class='box'></div>
-        <div id=ten class='box patterns3'></div>
-        <div id=eleven class='box dark'>Contact Me</div>
-        <div id=twelve class='box'></div>
+        <!-- second row  -->
+        <div id=five class="box dark-blue">
+            <p>Hello<br>I am Anh Le<br>and this is my online<br>portfolio</p>
+        </div>
+        <div id=six class="box medium">
+            <span id="six-img"></span>
+            <div class="underline-wrapper">
+                <div>
+                    <span>Projects</span>
+                    <span class="underline"></span>
+                </div>
+            </div>
+        </div>
+        <div id=seven class="box dark-blue">
+            <p>Full-Stack Web Developer<br>Responsive Designs<br>Data Analyst<br>Sports Fan</p>
+        </div>
+        <div id=eight class="box patterns1"></div>
+
+        <!-- third row  -->
+        <div id=nine class="box"></div>
+        <div id=ten class="box patterns1"></div>
+        <div id=eleven class="box dark">
+            <span id="eleven-img"></span>
+            <div class="underline-wrapper">
+                <div>
+                    <span>Contact Me</span>
+                    <span class="underline2"></span>
+                </div>
+            </div>
+        </div>
+        <div id=twelve class="box"></div>
+
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

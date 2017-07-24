@@ -8,7 +8,8 @@ html {
 
 body {
     height: 100%;
-    padding: 40px;
+    padding: 30px;
+    margin: 0;
     background-color: #f9f0e6;
 }
 
@@ -20,34 +21,127 @@ body {
 }
 
 .box {
-    height: 33.33%;
+    position: relative;
+    height: calc(100%/3);
     width: 25%;
     background-color: #FCD7AD;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 22pt;
+    color: #5f4a48;
+    font-family: 'VT323', monospace;
 }
 
 /*************** boxes ******************/
-
-#one, #two, #six, #eleven {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#two, #six, #eleven {
+    cursor: pointer;
 }
 
 #one {
+    display: flex;
     flex-direction: column;
-    font-size: 18pt;
-    color: #A57548;
+    justify-content: center;
+    align-items: center;
 }
 
+/* icon  */
 #one div {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #5296A5;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #5296A5;
+    color: #fff;
+}
+
+#two-img {
+    display: block;
+    width: 65px;
+    min-height: 55px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -30%;
+    background-image: url('./img/about_me.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    transform: scale(1.4);
+}
+
+#six-img {
+    display: block;
+    width: 65px;
+    min-height: 55px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -30%;
+    background-image: url('./img/laptop_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    transform: scale(1.4);
+}
+
+
+#six, #eleven {
+    color: #FCD7AD;
+}
+
+#seven {
+    position: relative;
+}
+
+#seven p {
+    position: absolute;
+    bottom: 20px;
+    text-align: right;
+    padding-left: inherit;
+    padding-right: inherit;
+    right: 0;
+}
+
+#eleven-img {
+    display: block;
+    width: 55px;
+    min-height: 55px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -30%;
+    background-image: url('./img/owl_icon2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+    transform: scale(1.4);
+}
+
+/***************** utility  ****************/
+
+.underline-wrapper {
+    position: relative;
+    bottom: -45%;
+    text-align: center;
+}
+
+.underline-wrapper div {
+    display: inline-block;
+}
+
+.underline {
+    display: block;
+    height: 2px;
+    margin: auto;
+    width: 0;
+    background-color: #413231;
+}
+
+.underline2 {
+    display: block;
+    height: 2px;
+    margin: auto;
+    width: 0;
+    background-color: #A57548;
 }
 
 /*********** color and patterns ***********/
@@ -55,12 +149,12 @@ body {
     background-color: #F6C28B;
 }
 
-.dark {
+.medium {
     background-color: #A57548;
 }
 
-.blue {
-    background-color: #82DDF0;
+.dark {
+    background-color: #413231;
 }
 
 .dark-blue {
@@ -69,15 +163,28 @@ body {
 
 .patterns1 {
     background-image: url('./img/pattern1.png');
-    background-size: contain;
+    background-size: cover;
 }
 
-.patterns2 {
-    background-image: url('./img/pattern2.png');
-    background-size: contain;
+/************ animation ***************/
+ .animation-underline {
+    animation-name: underline;
+    animation-duration: 1.0s;
+    width: 100%;
 }
 
-.patterns3 {
-    background-image: url('./img/pattern3.gif');
-    background-size: contain;
+ @keyframes underline {
+    from { width: 0; }
+    to { width: 100%;}
+}
+
+.animation-remove-underline {
+    animation-name: removeUnderline;
+    animation-duration: 1.0s;
+    width: 0;
+}
+
+ @keyframes removeUnderline {
+    from { width: 100%; }
+    to { width: 0;}
 }
