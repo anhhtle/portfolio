@@ -1,29 +1,54 @@
-$('#two').on('mouseenter', () => {
+const one = $('#one');
+const two = $('#two');
+const six = $('#six');
+const eleven = $('#eleven');
+
+one.on('mouseenter', () => {
+    $('#one div').addClass('animation-rotate');
+})
+
+one.on('mouseleave', () => {
+    $('#one div').removeClass('animation-rotate');
+})
+
+two.on('mouseenter', () => {
     $('#two .underline').removeClass('animation-remove-underline');
     $('#two .underline').addClass('animation-underline');
+    $('.question').addClass('animation-size-question');
+    $('.exclaimation').addClass('animation-size-exclaimation');
 });
 
-$('#two').on('mouseleave', () => {
+two.on('mouseleave', () => {
     $('#two .underline').removeClass('animation-underline');
     $('#two .underline').addClass('animation-remove-underline');
+    $('.question').removeClass('animation-size-question');
+    $('.exclaimation').removeClass('animation-size-exclaimation');
 });
 
-$('#six').on('mouseenter', () => {
+six.on('mouseenter', () => {
     $('#six .underline').removeClass('animation-remove-underline');
     $('#six .underline').addClass('animation-underline');
+    $('.six-img').addClass('animation-movement');
 });
 
-$('#six').on('mouseleave', () => {
+six.on('mouseleave', () => {
     $('#six .underline').removeClass('animation-underline');
     $('#six .underline').addClass('animation-remove-underline');
+    $('.six-img').removeClass('animation-movement');
 });
 
-$('#eleven').on('mouseenter', () => {
-    $('#eleven .underline2').removeClass('animation-remove-underline');
-    $('#eleven .underline2').addClass('animation-underline');
+eleven.on('mouseenter', () => {
+    $('.underline2').removeClass('animation-remove-underline');
+    $('.underline2').addClass('animation-underline');
+    $('.eleven-img').removeClass('animation-opacity');
+    $('.eleven-img').addClass('animation-fly');
+    $('.eleven-fly-trail').addClass('animation-fly-trail');
 });
 
-$('#eleven').on('mouseleave', () => {
+eleven.on('mouseleave', () => {
     $('#eleven .underline2').removeClass('animation-underline');
     $('#eleven .underline2').addClass('animation-remove-underline');
+    $('.eleven-img').removeClass('animation-fly');
+    $('.eleven-img').addClass('animation-opacity');
+    $('.eleven-fly-trail').removeClass('animation-fly-trail');
 });

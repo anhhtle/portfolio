@@ -54,12 +54,31 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+    border: 10px dashed #FCD7AD;
 }
 
-#two-img {
+.two-question-exclaimation {  /** question and exclaimation */
+    position: absolute;
+    top: 45px;
+    width: 55%;
+    margin: 0 auto;
+    left: 0;
+    font-size: 25pt;
+    right: 0;
+}
+
+.question, .exclaimation {
+    opacity: 0;
+}
+
+.question {
+    float: right;
+}
+
+.two-img {
     display: block;
     width: 65px;
-    min-height: 55px;
+    height: 50px;
     margin: 0 auto;
     position: relative;
     bottom: -30%;
@@ -70,7 +89,7 @@ body {
     transform: scale(1.4);
 }
 
-#six-img {
+.six-img {
     display: block;
     width: 65px;
     min-height: 55px;
@@ -89,6 +108,18 @@ body {
     color: #FCD7AD;
 }
 
+.eleven-fly-trail {
+    display: block;
+    width: 30px;
+    height: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 38%;
+    background-image: url('./img/fly.png');
+    background-size: contain;
+    left: calc(50% - 15px);
+}
+
 #seven {
     position: relative;
 }
@@ -102,7 +133,7 @@ body {
     right: 0;
 }
 
-#eleven-img {
+.eleven-img {
     display: block;
     width: 55px;
     min-height: 55px;
@@ -131,7 +162,7 @@ body {
 .underline {
     display: block;
     height: 2px;
-    margin: auto;
+    margin: 3px auto;
     width: 0;
     background-color: #413231;
 }
@@ -139,7 +170,7 @@ body {
 .underline2 {
     display: block;
     height: 2px;
-    margin: auto;
+    margin: 3px auto;
     width: 0;
     background-color: #A57548;
 }
@@ -168,8 +199,7 @@ body {
 
 /************ animation ***************/
  .animation-underline {
-    animation-name: underline;
-    animation-duration: 1.0s;
+    animation: underline 1.0s;
     width: 100%;
 }
 
@@ -179,12 +209,96 @@ body {
 }
 
 .animation-remove-underline {
-    animation-name: removeUnderline;
-    animation-duration: 1.0s;
+    animation: removeUnderline 1.0s;
     width: 0;
 }
 
  @keyframes removeUnderline {
     from { width: 100%; }
     to { width: 0;}
+}
+
+/********* size *********/
+.animation-size-exclaimation {
+    animation: size 3s infinite linear ;
+    opacity: 0;
+}
+
+@keyframes size {
+    50% { font-size: 20pt; opacity: 0; }
+    65% { font-size: 25pt; opacity: 1; }
+    75% { font-size: 30pt; opacity: 1; }
+    88% { font-size: 25pt; opacity: 1; }
+    100% { opacity: 0 }
+}
+
+.animation-size-question {
+    animation: sizeAlt 3s infinite linear ;
+    opacity: 1;
+}
+
+@keyframes sizeAlt {
+    0% { font-size: 20pt; opacity: 0 }
+    15% { font-size: 25pt; opacity: 1 }
+    25% { font-size: 30pt; }
+    38% { font-size: 25pt; opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/****** move left-right *****/
+.animation-movement {
+    animation: movement 2.5s infinite alternate linear;
+}
+
+@keyframes movement {
+    0% { left: 0; }
+    25% { left: -30px; }
+    50% { left: 0; }
+    75% { left: 30px; }
+    100% { left: 0; } 
+}
+
+/****** rotate  **********/
+.animation-rotate {
+    animation: rotate 4.0s infinite linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/****** fly ***********/
+.animation-fly {
+    animation: fly 1.5s linear;
+    bottom: 100%;
+}
+
+@keyframes fly {
+    0% { bottom: -30%; }
+    15% { bottom: -35%; }
+    100% { bottom: 100%; }
+}
+
+/********* fly trail ******/
+.animation-fly-trail {
+    animation: flyTrail 1.6s ease-in-out;
+    height: 100%;
+}
+
+@keyframes flyTrail {
+    from { height: 0; }
+    to { height: 100%; }
+}
+
+/****** opacity *******/
+.animation-opacity {
+    animation: opacity 1.0s linear;
+    opacity: 1;
+}
+
+@keyframes opacity{
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
