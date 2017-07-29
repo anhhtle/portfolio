@@ -3,6 +3,10 @@ const two = $('#two');
 const six = $('#six');
 const eleven = $('#eleven');
 
+$('.box').on('mouseenter', () => {
+    console.log('enter');
+})
+
 one.on('mouseenter', () => {
     $('#one div').addClass('animation-rotate');
 })
@@ -42,7 +46,9 @@ eleven.on('mouseenter', () => {
     $('.underline2').addClass('animation-underline');
     $('.eleven-img').removeClass('animation-opacity');
     $('.eleven-img').addClass('animation-fly');
-    $('.eleven-fly-trail').addClass('animation-fly-trail');
+    setTimeout(() => {
+        $('.eleven-fly-trail').addClass('animation-fly-trail');
+    }, 200)
 });
 
 eleven.on('mouseleave', () => {
@@ -51,4 +57,20 @@ eleven.on('mouseleave', () => {
     $('.eleven-img').removeClass('animation-fly');
     $('.eleven-img').addClass('animation-opacity');
     $('.eleven-fly-trail').removeClass('animation-fly-trail');
+});
+
+$('.nav-toogle, .three-lines-container').on('click', () => {
+    $('.nav-toggle-container').addClass('hidden');
+    $('.navigation-container').addClass('z-index');
+    $('nav').removeClass('animation-remove-height');
+    $('nav').addClass('animation-height');
+});
+
+$('.menutoggle').on('click', () => {
+    $('nav').removeClass('animation-height');
+    $('nav').addClass('animation-remove-height');
+    setTimeout(() => {
+        $('.nav-toggle-container').removeClass('hidden');
+        $('.navigation-container').removeClass('z-index');
+    }, 800);
 });
