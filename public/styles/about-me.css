@@ -1,0 +1,82 @@
+/*********** left-container ********/
+.left-container {
+    height: 100%;
+    background-color: #FCD7AD;
+    width: 50%;
+    font-family: 'VT323', monospace;
+}
+
+/*** left top ***/
+.left-top {
+    display: flex;
+}
+
+.about-me {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+    font-size: 30pt;
+    color: #5296A5;
+}
+
+.profile-img-container {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+/*** left bottom ***/
+.left-bottom {
+    padding-left: 50%;
+    padding-right: 20px;
+}
+
+.header {
+    font-size: 28pt;
+    color: #5296A5;
+}
+
+.description {
+    font-size: 16pt;
+    color: #5f4a48; 
+}
+
+/********** right-container ********/
+
+.right-container {
+    position: relative;
+    height: 100%;
+    background-color: #F6C28B;
+    width: 50%;
+    font-family: 'VT323', monospace;
+    padding: 10px 40px;
+}
+
+.header2{
+    font-size: 18pt;
+    color: #a5142d;
+    margin: 30px 0 10px;
+}
+
+.description2 {
+    font-size: 16pt;
+    color: #413231;
+    margin: 10px 0 20px;
+}
+
+.right-bottom-image {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-image: url(../img/pattern1.png);
+    background-size: cover;
+    left: 0;
+}
+
+.z-index {
+    z-index: 2000;
+}

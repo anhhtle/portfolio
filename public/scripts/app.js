@@ -3,10 +3,6 @@ const two = $('#two');
 const six = $('#six');
 const eleven = $('#eleven');
 
-$('.box').on('mouseenter', () => {
-    console.log('enter');
-})
-
 one.on('mouseenter', () => {
     $('#one div').addClass('animation-rotate');
 })
@@ -27,6 +23,10 @@ two.on('mouseleave', () => {
     $('#two .underline').addClass('animation-remove-underline');
     $('.question').removeClass('animation-size-question');
     $('.exclaimation').removeClass('animation-size-exclaimation');
+});
+
+two.on('click', () => {
+    window.location.href = './about-me.html';
 });
 
 six.on('mouseenter', () => {
