@@ -1,7 +1,7 @@
 /*********** left-container ********/
 .left-container {
     height: 100%;
-    background-color: #FCD7AD;
+    background-color: #dadada;
     width: 50%;
     font-family: 'VT323', monospace;
 }
@@ -17,7 +17,7 @@
     padding: 40px;
     text-align: center;
     font-size: 30pt;
-    color: #5296A5;
+    color: #06414e;
 }
 
 .profile-img-container {
@@ -36,7 +36,7 @@ img {
 
 .header {
     font-size: 28pt;
-    color: #5296A5;
+    color: #06414e;
 }
 
 .description {
@@ -45,11 +45,10 @@ img {
 }
 
 /********** right-container ********/
-
 .right-container {
     position: relative;
     height: 100%;
-    background-color: #F6C28B;
+    background-color: #d6cfcd;
     width: 50%;
     font-family: 'VT323', monospace;
     padding: 10px 40px;
@@ -65,16 +64,6 @@ img {
     font-size: 16pt;
     color: #413231;
     margin: 10px 0 20px;
-}
-
-.right-bottom-image {
-    position: absolute;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    background-image: url(../img/pattern1.png);
-    background-size: cover;
-    left: 0;
 }
 
 .z-index {

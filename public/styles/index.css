@@ -3,7 +3,7 @@
     position: relative;
     height: calc(100%/3);
     width: 25%;
-    background-color: #FCD7AD;
+    background-color: #dadada;
     padding: 20px;
     overflow: hidden;
     font-size: 22pt;
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    border: 10px dashed #FCD7AD;
+    border: 10px dashed #dadada;
 }
 
 .two-question-exclaimation {  /** question and exclaimation */
@@ -164,15 +164,15 @@
 
 /*********** color and patterns ***********/
 .light {
-    background-color: #F6C28B;
+    background-color: #bfabaa;
 }
 
 .medium {
-    background-color: #A57548;
+    background-color: #413231;
 }
 
 .dark {
-    background-color: #413231;
+    background-color: #06414e;
 }
 
 .dark-blue {
@@ -270,7 +270,7 @@
 
 /********* fly trail ******/
 .animation-fly-trail {
-    animation: height 1.7s ease-in-out;
+    animation: height 2s ease-in-out;
     height: 100%;
 }
 
@@ -280,8 +280,9 @@
 }
 
 @keyframes height {
-    from { height: 0; }
-    to { height: 100%; }
+    0% { height: 0; }
+    70% { height: 0; }
+    100% { height: 100%; }
 }
 
 .animation-remove-height {

@@ -30,25 +30,27 @@ two.on('click', () => {
 });
 
 six.on('mouseenter', () => {
-    $('#six .underline').removeClass('animation-remove-underline');
-    $('#six .underline').addClass('animation-underline');
+    $('#six .underline2').removeClass('animation-remove-underline');
+    $('#six .underline2').addClass('animation-underline');
     $('.six-img').addClass('animation-movement');
 });
 
 six.on('mouseleave', () => {
-    $('#six .underline').removeClass('animation-underline');
-    $('#six .underline').addClass('animation-remove-underline');
+    $('#six .underline2').removeClass('animation-underline');
+    $('#six .underline2').addClass('animation-remove-underline');
     $('.six-img').removeClass('animation-movement');
 });
 
+six.on('click', () => {
+    window.location.href = './projects.html';
+});
+
 eleven.on('mouseenter', () => {
-    $('.underline2').removeClass('animation-remove-underline');
-    $('.underline2').addClass('animation-underline');
+    $('#eleven .underline2').removeClass('animation-remove-underline');
+    $('#eleven .underline2').addClass('animation-underline');
     $('.eleven-img').removeClass('animation-opacity');
     $('.eleven-img').addClass('animation-fly');
-    setTimeout(() => {
-        $('.eleven-fly-trail').addClass('animation-fly-trail');
-    }, 200)
+    $('.eleven-fly-trail').addClass('animation-fly-trail');
 });
 
 eleven.on('mouseleave', () => {

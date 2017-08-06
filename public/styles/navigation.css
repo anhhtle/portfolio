@@ -10,7 +10,7 @@ body {
     height: 100%;
     padding: 30px;
     margin: 0;
-    background-color: #f9f0e6;
+    background-color: #147c80;
 }
 
 .grid {
@@ -91,8 +91,8 @@ nav > ul {
     z-index: 2002;
     text-align: center;
     text-decoration: none;
-    color: #bdb5b5;
-    font-size: 15pt;
+    color: #413231;
+    font-size: 18pt;
 }
 
 .nav-toggle-container {
@@ -109,7 +109,7 @@ nav > ul {
     height: 30px;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent; 
-    border-top: 30px solid #f9f0e6;  
+    border-top: 30px solid #147c80;  
 }
 
 .three-lines-container {
@@ -130,7 +130,7 @@ nav > ul {
 .three-lines-container div {
     height: 2px;
     width: 100%;
-    background-color: #413231;
+    background-color: #dadada;
     margin-top: 2px;
 }
 
