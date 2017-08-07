@@ -1,0 +1,114 @@
+/*********** left-container ********/
+.left-container {
+    position: relative;
+    height: 100%;
+    background-color: #dadada;
+    width: 50%;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 16pt;
+    color: #a5142d
+}
+
+.left-container > p {
+    padding: 80px;
+    font-size: 30pt;
+    text-align: center;
+    color: #06414e;
+    margin: 0;
+}
+
+.contact {
+    width: 250px;
+    margin: 0 auto 40px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    font-size: 16pt;
+    color: #a5142d;
+    margin: 5px auto;
+    display: block;
+}
+
+/********** right-container ********/
+.right-container {
+    position: relative;
+    height: 100%;
+    background-color: #d6cfcd;
+    width: 50%;
+    padding-top: 40pt;
+    font-family: 'VT323', monospace;
+    overflow: hidden;
+}
+
+
+/*********** images ****************/
+.contact-img {
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 60px;
+    display: block;
+}
+
+.phone {
+    background-image: url('../img/phone-icon.png');
+}
+
+.email {
+    background-image: url('../img/email-icon.png');
+}
+
+.linkedin {
+    background-image: url('../img/linkedin-icon.png');
+}
+
+.github {
+    background-image: url('../img/github-icon.png');
+}
+
+/********* utility **********/
+.z-index {
+    z-index: 2000;
+}
+
+/************* animation ********/
+.underline-wrapper {
+    display: inline-block;
+    height: 40px;
+}
+
+.underline {
+    display: block;
+    height: 2px;
+    margin: 3px auto;
+    width: 0;
+    background-color: #413231;
+}
+
+.animation-underline {
+    animation: underline 1.0s;
+    width: 100%;
+}
+
+@keyframes underline {
+    from { width: 0; }
+    to { width: 100%;}
+}
+
+.animation-remove-underline {
+    animation: removeUnderline 1.0s;
+    width: 0;
+}
+
+@keyframes removeUnderline {
+    from { width: 100%; }
+    to { width: 0;}
+}

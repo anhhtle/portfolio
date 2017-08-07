@@ -61,6 +61,10 @@ eleven.on('mouseleave', () => {
     $('.eleven-fly-trail').removeClass('animation-fly-trail');
 });
 
+eleven.on('click', () => {
+    window.location.href = './contact-me.html';
+});
+
 $('.nav-toogle, .three-lines-container').on('click', () => {
     $('.nav-toggle-container').addClass('hidden');
     $('.navigation-container').addClass('z-index');

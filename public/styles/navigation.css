@@ -140,7 +140,7 @@ nav > ul {
 }
 
 .animation-height {
-    animation: height 0.8s ease-in-out;
+    animation: height 0.5s ease-in-out;
     height: 100%;
 }
 
@@ -150,7 +150,7 @@ nav > ul {
 }
 
 .animation-remove-height {
-    animation: removeHeight 0.8s ease-in-out;
+    animation: removeHeight 0.5s ease-in-out;
     height: 0;
 }
 

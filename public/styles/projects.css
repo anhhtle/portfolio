@@ -72,31 +72,56 @@
     width: 50%;
     padding-top: 40pt;
     font-family: 'VT323', monospace;
+    overflow: hidden;
 }
-
 
 .project-detail {
     position: absolute;
     height: 60%;
-    top: -100%;
+    top: -110%;
+    left: 0;
+    right: 0;
 }
 
 .project-detail > p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 18pt;
     padding: 0 20px;
 }
 
 /* project images  */
-.founding-speeches {
-    background-image: url('../img/founding-speeches.jpg');
+.project-img {
     height: 100%;
     width: 80%;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.founding-speeches {
+    background-image: url('../img/founding-speeches.jpg');
+}
+
+.friend-alert {
+    background-image: url('../img/friend-alert.png');
+}
+
+.represented {
+    background-image: url('../img/represented.png');
+}
+
+.icon-1 {
+    background-image: url('../img/founding-speeches-icon.png');
+}
+
+.icon-2 {
+    background-image: url('../img/friend-alert-icon.png');
+}
+
+.icon-3 {
+    background-image: url('../img/represented-icon.png');
 }
 
 /* navigation  */
@@ -115,7 +140,30 @@
     width: 50%;
     height: 100%;
     text-align: center;
-    background-color: #d6cfcd;
+    background-color: #c1bab8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #a79f9d;
+}
+
+.arrow-img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 80% 70px;
+    margin: 0 auto;
+    background-position: center;
+    opacity: 0.4;
+    transition: opacity ease-in-out 0.5s;
+}
+
+.arrow-img:hover {
+    opacity: 1;
 }
 
 .two {
@@ -130,15 +178,13 @@
 }
 
 .up {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    bottom: 75px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
 }
 
 .down {
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    bottom: 95px;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
 }
 
 /*** utility ****/
@@ -153,4 +199,89 @@
 
 .active2 {
     top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*** animation ***/
+.move-up {
+    top: -110%;
+    animation: moveUp ease-in-out 0.5s;
+}
+
+@keyframes moveUp {
+    from { top: 40px }
+    to { top: -110% }
+}
+
+.move-up2 {
+    top: 40px;
+    animation: moveUp2 ease-in-out 0.5s; 
+}
+
+@keyframes moveUp2 {
+    from { top: 110% }
+    to { top: 40px }
+}
+
+.move-up3 {
+    top: -100%;
+    animation: moveUp3 ease-in-out 0.5s;
+}
+
+@keyframes moveUp3 {
+    from { top: 0 }
+    to { top: -100% }
+}
+
+.move-up4 {
+    top: 0;
+    animation: moveUp4 ease-in-out 0.5s; 
+}
+
+@keyframes moveUp4 {
+    from { top: 100% }
+    to { top: 0 }
+}
+
+.move-down {
+    top: 110%;
+    animation: moveDown ease-in-out 0.5s;
+}
+
+@keyframes moveDown {
+    from { top: 40px }
+    to { top: 110% }
+}
+
+.move-down2 {
+    top: 40px;
+    animation: moveDown2 ease-in-out 0.5s; 
+}
+
+@keyframes moveDown2 {
+    from { top: -110% }
+    to { top: 40px }
+}
+
+.move-down3 {
+    top: 100%;
+    animation: moveDown3 ease-in-out 0.5s;
+}
+
+@keyframes moveDown3 {
+    from { top: 0px }
+    to { top: 100% }
+}
+
+.move-down4 {
+    top: 0;
+    animation: moveDown4 ease-in-out 0.5s; 
+}
+
+@keyframes moveDown4 {
+    from { top: -100% }
+    to { top: 0 }
 }
