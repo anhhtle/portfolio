@@ -1,0 +1,139 @@
+@media only screen and (max-width: 930px){
+    .about-me {
+        padding: 30px;
+        font-size: 20pt;
+    }
+
+    .left-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20%;
+    }
+
+    .header{
+        font-size: 20pt;
+    }
+
+    .header2 {
+        font-size: 15pt;
+    }
+
+    .description, .description2 {
+        font-size: 15pt;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    html, body {
+        height: auto;
+    }
+    
+    .left-container, .right-container {
+        width: 100%;
+    }
+
+    .left-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img-container {
+        width: 70%;
+    }
+
+    .about-me {
+        padding-top: 10%;
+        font-size: 30pt;
+    }
+
+    .left-bottom {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 10%;
+    }
+
+    .header, {
+        font-size: 22pt;
+    }
+
+    .header2 {
+        font-size: 20pt;
+    }
+
+    .description, .description2 {
+        font-size: 18pt;
+    }
+
+}
+
+@media only screen and (max-height: 800px){
+    .left-container, .right-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img-container {
+        width: 500px;
+    }
+
+    .about-me {
+        padding-top: 10%;
+        font-size: 30pt;
+    }
+
+    .left-bottom {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 10%;
+    }
+
+    .header, {
+        font-size: 22pt;
+    }
+
+    .header2 {
+        font-size: 20pt;
+    }
+
+    .description, .description2 {
+        font-size: 18pt;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    html, body {
+        height: auto;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    .left-container, .right-container {
+        padding-bottom: 30px;
+    }
+
+    .profile-img-container {
+        width: 60%;
+    }
+
+    .header {
+        font-size: 20pt;
+    }
+
+    .header2 {
+        font-size: 16pt;
+    }
+
+    .description, .description2 {
+        font-size: 15pt;
+    }
+}

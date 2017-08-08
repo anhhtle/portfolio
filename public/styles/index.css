@@ -257,19 +257,19 @@
 
 /****** fly ***********/
 .animation-fly {
-    animation: fly 1.5s linear;
+    animation: fly 2s linear;
     bottom: 100%;
 }
 
 @keyframes fly {
     0% { bottom: -30%; }
-    15% { bottom: -35%; }
+    8% { bottom: -33%; }
     100% { bottom: 100%; }
 }
 
 /********* fly trail ******/
 .animation-fly-trail {
-    animation: height 2s ease-in-out;
+    animation: height 2s ease-in;
     height: 100%;
 }
 

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="./public/styles/projects.css">
     <link rel="stylesheet" href="./public/styles/navigation.css">
+    <link rel="stylesheet" href="./public/styles/responsive/navigation-responsive.css">
     <link rel="stylesheet" href="./public/styles/responsive/projects-responsive.css">
 </head>
 
@@ -33,66 +34,68 @@
         </div>
     </div>
 
-    <section class="grid">
-        <section class="left-container">
-            <p>MY PROJECTS</p>
-            <div class="left-bottom">
-                <div class="project active">
-                    <h2>FOUNDING SPEECHES + IBM WATSON</h3>
-                    <div>
-                        <p class="technology">REACT & NoSQL & NODE & D3 & REST API</p>
+    <main>
+        <section class="grid">
+            <section class="left-container">
+                <p>MY PROJECTS</p>
+                <div class="left-bottom">
+                    <div class="project active">
+                        <h2>FOUNDING SPEECHES + IBM WATSON</h3>
+                        <div>
+                            <p class="technology">REACT & NoSQL & NODE & D3 & REST API</p>
+                        </div>
+                        <a class="project-link" href="https://founding-speeches.herokuapp.com/" target="_blank">VIEW LIVE APP</a>
+                        <a class="project-link" href="https://github.com/anhhtle/founding-speeches" target="_blank">VIEW GITHUB</a>
                     </div>
-                    <a class="project-link" href="https://founding-speeches.herokuapp.com/" target="_blank">VIEW LIVE APP</a>
-                    <a class="project-link" href="https://github.com/anhhtle/founding-speeches" target="_blank">VIEW GITHUB</a>
-                </div>
-                <div class="project">
-                    <h2>FRIEND ALERT</h3>
-                    <div>
-                        <p class="technology">JQUERY & MONGODB & NODE.JS & EXPRESS.JS & REST API</p>
+                    <div class="project">
+                        <h2>FRIEND ALERT</h3>
+                        <div>
+                            <p class="technology">JQUERY & MONGODB & NODE.JS & EXPRESS.JS & REST API</p>
+                        </div>
+                        <a class="project-link" href="https://friend-alert.herokuapp.com/index.html" target="_blank">VIEW LIVE APP</a>
+                        <a class="project-link" href="https://github.com/anhhtle/Friend-Alert" target="_blank">VIEW GITHUB</a>
                     </div>
-                    <a class="project-link" href="https://friend-alert.herokuapp.com/index.html" target="_blank">VIEW LIVE APP</a>
-                    <a class="project-link" href="https://github.com/anhhtle/Friend-Alert" target="_blank">VIEW GITHUB</a>
-                </div>
-                <div class="project">
-                    <h2>REPRESENTED</h3>
-                    <div>
-                        <p class="technology">HTML & CSS & JQUERY & GOOGLE API</p>
+                    <div class="project">
+                        <h2>REPRESENTED</h3>
+                        <div>
+                            <p class="technology">HTML & CSS & JQUERY & GOOGLE API</p>
+                        </div>
+                        <a class="project-link" href="https://anhhtle.github.io/Representative-Search/" target="_blank">VIEW LIVE APP</a>
+                        <a class="project-link" href="https://github.com/anhhtle/Representative-Search" target="_blank">VIEW GITHUB</a>
                     </div>
-                    <a class="project-link" href="https://anhhtle.github.io/Representative-Search/" target="_blank">VIEW LIVE APP</a>
-                    <a class="project-link" href="https://github.com/anhhtle/Representative-Search" target="_blank">VIEW GITHUB</a>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="right-container">
-            <div class="project-detail active2">
-                <p>IN-DEPTH ANALYSIS OF PRESIDENTIAL SPEECHES USING IBM WATSON</p>
-                <div class="project-img founding-speeches"></div>
-            </div>
-            <div class="project-detail">
-                <p>SIGN-UP YOUR FRIENDS AS EMERGENCY CONTACTS. 
-                    SET AN ALARM. YOUR CONTACTS WILL BE NOTIFIED WHEN THE TIMER EXPIRES</p>
-                <div class="project-img friend-alert"></div>
-            </div>
-            <div class="project-detail">
-                <p>SEARCH YOUR SENATORS OR CONGRESSPERSON BY USING YOUR DEVICE'S LOCATION
-                    OR ADDRESS</p>
-                <div class="project-img represented"></div>
-            </div>
+            <section class="right-container">
+                <div class="project-detail active2">
+                    <p>IN-DEPTH ANALYSIS OF PRESIDENTIAL SPEECHES USING IBM WATSON</p>
+                    <div class="project-img founding-speeches"></div>
+                </div>
+                <div class="project-detail">
+                    <p>SIGN-UP YOUR FRIENDS AS EMERGENCY CONTACTS. 
+                        SET AN ALARM. YOUR CONTACTS WILL BE NOTIFIED WHEN THE TIMER EXPIRES</p>
+                    <div class="project-img friend-alert"></div>
+                </div>
+                <div class="project-detail">
+                    <p>SEARCH YOUR SENATORS OR CONGRESSPERSON BY USING YOUR DEVICE'S LOCATION
+                        OR ADDRESS</p>
+                    <div class="project-img represented"></div>
+                </div>
 
-            <!-- bottom navigation  -->
-            <nav class="bottom-nav">
-                <div class="arrow one">
-                    <div class="arrow-img icon-2"></div>
-                    <span class="up"></span> 
-                </div>
-                <div class="arrow two">
-                    <div class="arrow-img icon-3"></div>
-                    <span class="down"></span> 
-                </div>
-            </nav>
+                <!-- bottom navigation  -->
+                <nav class="bottom-nav">
+                    <div class="arrow one">
+                        <div class="arrow-img icon-2"></div>
+                        <span class="up"></span> 
+                    </div>
+                    <div class="arrow two">
+                        <div class="arrow-img icon-3"></div>
+                        <span class="down"></span> 
+                    </div>
+                </nav>
+            </section>
         </section>
-    </section>
+    </main>
 
     <script src="./public/scripts/jquery-3.1.1.min.js"></script>
     <script src="./public/scripts/projects.js"></script>

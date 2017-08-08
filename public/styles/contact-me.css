@@ -1,3 +1,4 @@
+
 /*********** left-container ********/
 .left-container {
     position: relative;
@@ -41,9 +42,25 @@
     height: 100%;
     background-color: #d6cfcd;
     width: 50%;
-    padding-top: 40pt;
+    padding: 15% 40px 40px 40px;
     font-family: 'VT323', monospace;
     overflow: hidden;
+    font-size: 18pt;
+    color: #413231;
+    text-align: center;
+}
+
+.right-container p {
+    margin-bottom: 40px;
+}
+
+.divider {
+    font-size: 18pt;
+    border-top: 2px solid #06414e;
+    border-bottom: 2px solid #06414e;
+    color: #a5142d;
+    padding: 10px;
+    margin-bottom: 60px;
 }
 
 
