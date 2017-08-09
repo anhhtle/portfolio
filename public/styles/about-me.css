@@ -52,6 +52,7 @@ img {
     width: 50%;
     font-family: 'VT323', monospace;
     padding: 10px 40px;
+    overflow-y: auto;
 }
 
 .header2{
