@@ -200,3 +200,21 @@
     }
 
 }
+
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+    .left-container {
+        height: 85%;
+    }
+
+    .right-container {
+        height: 15%;
+    }
+    
+    .project-detail {
+        display: none;
+    }
+
+    .bottom-nav {
+        height: 100%;
+    }
+}
