@@ -206,13 +206,13 @@
 
 /*** animation ***/
 .move-up {
-    top: -110%;
+    top: -200%;
     animation: moveUp ease-in-out 0.5s;
 }
 
 @keyframes moveUp {
     from { top: 40px }
-    to { top: -110% }
+    to { top: -200% }
 }
 
 .move-up2 {
@@ -221,7 +221,7 @@
 }
 
 @keyframes moveUp2 {
-    from { top: 110% }
+    from { top: 200% }
     to { top: 40px }
 }
 
@@ -232,7 +232,7 @@
 
 @keyframes moveUp3 {
     from { top: 0 }
-    to { top: -100% }
+    to { top: -200% }
 }
 
 .move-up4 {
@@ -241,7 +241,7 @@
 }
 
 @keyframes moveUp4 {
-    from { top: 100% }
+    from { top: 200% }
     to { top: 0 }
 }
 
@@ -252,7 +252,7 @@
 
 @keyframes moveDown {
     from { top: 40px }
-    to { top: 110% }
+    to { top: 200% }
 }
 
 .move-down2 {
@@ -261,7 +261,7 @@
 }
 
 @keyframes moveDown2 {
-    from { top: -110% }
+    from { top: -200% }
     to { top: 40px }
 }
 
@@ -272,7 +272,7 @@
 
 @keyframes moveDown3 {
     from { top: 0px }
-    to { top: 100% }
+    to { top: 200% }
 }
 
 .move-down4 {
@@ -281,6 +281,6 @@
 }
 
 @keyframes moveDown4 {
-    from { top: -100% }
+    from { top: -200% }
     to { top: 0 }
 }

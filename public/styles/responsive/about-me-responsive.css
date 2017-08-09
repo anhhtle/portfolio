@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1000px){
+    .left-bottom, .right-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media only screen and (max-width: 930px){
     .about-me {
         padding: 30px;
@@ -5,8 +12,6 @@
     }
 
     .left-bottom {
-        padding-left: 20px;
-        padding-right: 20px;
         margin-top: 20%;
     }
 
@@ -48,8 +53,6 @@
     }
 
     .left-bottom {
-        padding-left: 40px;
-        padding-right: 40px;
         margin-top: 10%;
     }
 
@@ -67,7 +70,21 @@
 
 }
 
-@media only screen and (max-height: 800px){
+@media only screen and (max-height: 760px) {
+    html, body {
+        height: auto;
+    }
+    
+    .left-container, .right-container {
+        height: 740px;
+    }
+}
+
+@media only screen and (max-height: 600px){
+    html, body {
+        height: auto;
+    }
+
     .left-container, .right-container {
         width: 100%;
         height: auto;
@@ -84,14 +101,13 @@
     }
 
     .about-me {
-        padding-top: 10%;
+        padding-top: 5%;
         font-size: 30pt;
     }
 
     .left-bottom {
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-top: 10%;
+        padding: 0 20px 31px;
+        margin-top: 5%;
     }
 
     .header, {

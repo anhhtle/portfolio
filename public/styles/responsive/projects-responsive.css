@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1000px) {
+    .project-detail > p {
+        margin-bottom: 20px;
+        font-size: 16pt;
+    }
+}
+
 @media only screen and (max-height: 800px) {
     .bottom-nav {
         height: 100px;
@@ -35,6 +42,7 @@
 
     .project {
         padding: 20px;
+        top: 200%;
     }
 
     .project > h2 {
@@ -85,52 +93,110 @@
 
     @keyframes moveUp {
         from { top: 25px }
-        to { top: -110% }
+        to { top: -200% }
     }
 
     @keyframes moveUp2 {
-        from { top: 110% }
+        from { top: 200% }
         to { top: 25px }
     }
 
     @keyframes moveUp3 {
         from { top: 0 }
-        to { top: -100% }
-    }
+        to { top: -200% }
+    } 
 
     @keyframes moveUp4 {
-        from { top: 100% }
+        from { top: 200% }
         to { top: 0 }
     }
 
     @keyframes moveDown {
         from { top: 25px }
-        to { top: 110% }
+        to { top: 200% }
     }
 
     @keyframes moveDown2 {
-        from { top: -110% }
+        from { top: -200% }
         to { top: 25px }
     }
 
     @keyframes moveDown3 {
         from { top: 0 }
-        to { top: 100% }
+        to { top: 200% }
     }
 
     @keyframes moveDown4 {
-        from { top: -100% }
+        from { top: -200% }
         to { top: 0 }
     }
 
 }
 
 @media only screen and (max-width: 500px) {
-    .left-container {
-        height: 45%;
+    .left-container, .right-container {
+        height: 50%;
     }
 
-    .right-container {
-        height: 55%;
+    .left-container {
+        display: flex;
+        flex-direction: column;
     }
+
+    .left-container > p {
+        padding: 30px 10px 15px;
+        font-size: 16pt;
+        height: 28%;
+        background-color: #d6cfcd;
+    }
+
+    .left-bottom {
+        top: initial;
+        height: 72%;
+    }
+
+    .project > h2 {
+        font-size: 14pt;
+        margin: 10px 5px;
+    }
+
+    .technology {
+        font-size: 14pt;
+        margin: 10px 5px;
+    }
+
+    .project-link {
+        font-size: 12pt;
+        padding: 2pt;
+        width: 100px;
+    }
+
+    .active, .move-down4, .move-up4 {
+        padding: 5px;
+    }
+
+    .bottom-nav {
+        height: 20%;
+    }
+
+    .up, .down {
+        width: 20px;
+        height: 20px;
+    }
+
+    .up {
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .down {
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+    }
+
+    @keyframes moveUp3 {
+        from { top: -25px }
+        to { top: -200% }
+    }
+
 }

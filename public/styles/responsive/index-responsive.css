@@ -1,4 +1,4 @@
-@media (max-width: 800px), (max-height: 800px) {
+@media (max-width: 800px), (max-height: 600px) {
     .box {
         width: 50%;
         font-size: 18pt;
@@ -21,7 +21,7 @@
     }
 }
 
-@media (max-width: 450px), (max-height: 600px){
+@media (max-width: 450px){
     html, body {
         height: auto;
     }
