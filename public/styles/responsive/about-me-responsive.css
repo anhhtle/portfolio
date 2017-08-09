@@ -101,8 +101,9 @@
     }
 
     .about-me {
-        padding-top: 5%;
-        font-size: 30pt;
+        padding-top: 10%;
+        font-size: 20pt;
+        width: 70%;
     }
 
     .left-bottom {
@@ -111,7 +112,7 @@
     }
 
     .header, {
-        font-size: 22pt;
+        font-size: 20pt;
     }
 
     .header2 {
@@ -135,6 +136,11 @@
 
     .left-container, .right-container {
         padding-bottom: 30px;
+    }
+
+    .about-me {
+        width: 70%;
+        font-size: 20pt;
     }
 
     .profile-img-container {
