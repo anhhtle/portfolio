@@ -29,6 +29,10 @@ main {
 .z-indez {
     z-index: 2000;
 }
+
+.height {
+    height: 100%;
+}
 /************ navigation ***************/
 .navigation-container {
     position: fixed;

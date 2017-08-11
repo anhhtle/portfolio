@@ -15,14 +15,16 @@
 <body>
 
     <section class="navigation-container">
-        <nav class="top-nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about-me.html">ABOUT ME</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-            </ul>
-            <a class="menutoggle">x</a>
-        </nav>
+        <div class="nav-background">
+            <nav class="top-nav" role="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-me.html">ABOUT ME</a></li>
+                    <li><a href="projects-me.html">PROJECTS</a></li>
+                </ul>
+                <a class="menutoggle hidden">x</a>
+            </nav>
+        </div>
     </section>
 
     <div class="nav-toggle-container">
@@ -34,7 +36,7 @@
         </div>
     </div>
 
-    <main>
+    <main role="main">
         <section class="grid">
 
             <section class="left-container">
@@ -81,6 +83,7 @@
     </main>
 
     <script src="./public/scripts/jquery-3.1.1.min.js"></script>
+    <script src="./public/scripts/navigation.js"></script>
     <script src="./public/scripts/contact-me.js"></script>
 </body>
 

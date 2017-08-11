@@ -15,14 +15,16 @@
 <body>
 
     <section class="navigation-container">
-        <nav>
-            <ul>
-                <li><a href="about-me.html">ABOUT ME</a></li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="contact-me.html">CONTACT ME</a></li>
-            </ul>
-            <a class="menutoggle">x</a>
-        </nav>
+        <div class="nav-background">
+            <nav class="top-nav" role="navigation">
+                <ul>
+                    <li><a href="about-me.html">ABOUT ME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="contact-me.html">CONTACT ME</a></li>
+                </ul>
+                <a class="menutoggle hidden">x</a>
+            </nav>
+        </div>
     </section>
 
     <div class="nav-toggle-container">
@@ -34,7 +36,7 @@
         </div>
     </div>
 
-    <main>
+    <main role="main">
         <section class="grid">
 
             <!-- first row  -->
@@ -92,6 +94,7 @@
     </main>
 
     <script src="./public/scripts/jquery-3.1.1.min.js"></script>
+    <script src="./public/scripts/navigation.js"></script>
     <script src="./public/scripts/app.js"></script>
 </body>
 

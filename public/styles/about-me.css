@@ -4,6 +4,7 @@
     background-color: #dadada;
     width: 50%;
     font-family: 'VT323', monospace;
+    z-index: 1000;
 }
 
 /*** left top ***/

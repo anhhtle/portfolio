@@ -15,14 +15,16 @@
 <body>
 
     <section class="navigation-container">
-        <nav class="top-nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about-me.html">ABOUT ME</a></li>
-                <li><a href="contact-me.html">CONTACT ME</a></li>
-            </ul>
-            <a class="menutoggle">x</a>
-        </nav>
+        <div class="nav-background">
+            <nav class="top-nav" role="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-me.html">ABOUT ME</a></li>
+                    <li><a href="contact-me.html">CONTACT ME</a></li>
+                </ul>
+                <a class="menutoggle hidden">x</a>
+            </nav>
+        </div>
     </section>
 
     <div class="nav-toggle-container">
@@ -89,7 +91,7 @@
                 </div>
 
                 <!-- bottom navigation  -->
-                <nav class="bottom-nav">
+                <nav class="bottom-nav" role="navigation">
                     <div class="arrow one">
                         <div class="arrow-img icon-2"></div>
                         <span class="up"></span> 
@@ -104,6 +106,7 @@
     </main>
 
     <script src="./public/scripts/jquery-3.1.1.min.js"></script>
+    <script src="./public/scripts/navigation.js"></script>
     <script src="./public/scripts/projects.js"></script>
 </body>
 
