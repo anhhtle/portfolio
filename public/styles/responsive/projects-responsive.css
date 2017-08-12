@@ -233,8 +233,30 @@
         height: 85%;
     }
 
+    .left-container > p {
+        padding: 30px 10px 15px;
+        font-size: 16pt;
+    }
+    
     .right-container {
         height: 15%;
+    }
+
+    .project > h2 {
+        font-size: 14pt;
+        margin: 10px 5px;
+    }
+
+
+    .technology {
+        font-size: 12pt;
+        margin: 5px 5px 10px;
+    }
+
+    .project-link {
+        font-size: 12pt;
+        padding: 2pt;
+        width: 100px;
     }
     
     .project-detail {
