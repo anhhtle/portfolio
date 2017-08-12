@@ -5,7 +5,7 @@
     }
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 850px) {
     .bottom-nav {
         height: 100px;
     }
@@ -74,10 +74,6 @@
         display: none;
     }
 
-    .move-down2, .moveUp2, .active2 {
-        top: 25px;
-    }
-
     .active, .move-down4, .move-up4 {
         top: 0px;
     }
@@ -94,13 +90,13 @@
     /* animation  */
 
     @keyframes moveUp {
-        from { top: 25px }
+        from { top: 40px }
         to { top: -200% }
     }
 
     @keyframes moveUp2 {
         from { top: 200% }
-        to { top: 25px }
+        to { top: 40px }
     }
 
     @keyframes moveUp3 {
@@ -114,13 +110,13 @@
     }
 
     @keyframes moveDown {
-        from { top: 25px }
+        from { top: 40px }
         to { top: 200% }
     }
 
     @keyframes moveDown2 {
         from { top: -200% }
-        to { top: 25px }
+        to { top: 40px }
     }
 
     @keyframes moveDown3 {
@@ -156,6 +152,10 @@
         top: initial;
         height: 72%;
     }
+
+    .move-down2, .moveUp2, .active2 {
+        top: 25px;
+    } 
 
     .project > h2 {
         font-size: 14pt;
@@ -196,9 +196,29 @@
         border-right: 2px solid black;
     }
 
+    @keyframes moveUp {
+        from { top: 25px }
+        to { top: -200% }
+    }
+
+    @keyframes moveUp2 {
+        from { top: 200% }
+        to { top: 25px }
+    }
+
     @keyframes moveUp3 {
         from { top: -25px }
         to { top: -200% }
+    }
+
+    @keyframes moveDown {
+        from { top: 25px }
+        to { top: 200% }
+    }
+
+    @keyframes moveDown2 {
+        from { top: -200% }
+        to { top: 25px }
     }
 
 }

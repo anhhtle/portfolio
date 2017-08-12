@@ -106,6 +106,10 @@
     height: 40px;
 }
 
+.underline-wrapper > div {
+    display: inline-block;
+}
+
 .underline {
     display: block;
     height: 2px;

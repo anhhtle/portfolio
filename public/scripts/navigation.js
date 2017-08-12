@@ -1,34 +1,44 @@
+let wrapper = $('.navigation-container');
+let navBackground = wrapper.find('div');
+let nav = navBackground.children();
+let menutoggle = nav.find('.menutoggle');
+
 let closeNav = () => {
-    $('.top-nav').removeClass('animation-height');
-    $('.top-nav').addClass('animation-remove-height');
-    $('.nav-background').removeClass('height');
+    nav.removeClass('animation-height');
+    nav.addClass('animation-remove-height');
+    navBackground.removeClass('height');
     setTimeout(() => {
-        $('.menutoggle').addClass('hidden');
+        menutoggle.addClass('hidden');
     }, 200);
     setTimeout(() => {
         $('.nav-toggle-container').removeClass('hidden');
-        $('.navigation-container').removeClass('z-index');
-        $('.menutoggle').addClass('hidden');
+        wrapper.removeClass('z-index');
+        menutoggle.addClass('hidden');
     }, 500);
 }
 
 // show top navigation
-$('.nav-toogle, .three-lines-container').on('click', () => {
+$('.nav-toogle, .three-lines-container').click(() => {
     $('.nav-toggle-container').addClass('hidden');
-    $('.navigation-container').addClass('z-index');
-    $('.top-nav').removeClass('animation-remove-height');
-    $('.nav-background').addClass('height');
-    $('.top-nav').addClass('animation-height');
+    wrapper.addClass('z-index');
+    nav.removeClass('animation-remove-height');
+    navBackground.addClass('height');
+    nav.addClass('animation-height');
     setTimeout(() => {
-        $('.menutoggle').removeClass('hidden');
+        menutoggle.removeClass('hidden');
     }, 200);
 });
 
 // hide top navigation
-$('.menutoggle').on('click', () => {
+menutoggle.click(() => {
     closeNav();
 });
 
-$('.nav-background').on('click', () => {
+navBackground.click(() => {
     closeNav();
 });
+
+// prevent clicking on navagation will trigger click on nav-background
+nav.click((e) => {
+    e.stopPropagation();
+})

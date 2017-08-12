@@ -27,7 +27,36 @@
     }
 }
 
-@media only screen and (max-width: 450px){
+@media (max-height: 500px) {
+    html, body {
+        height: auto;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    .box {
+        width: 50%;
+        height: 240px;
+        font-size: 20pt;
+    }
+
+    #one p {
+        margin-top: 15px;
+    }
+
+    #seven p {
+        right: 20px;
+        text-align: right;
+    }
+
+    .eleven-fly-trail {
+        bottom: 33%;
+    }
+}
+
+@media (max-width: 600px) {
     html, body {
         height: auto;
     }

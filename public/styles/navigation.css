@@ -124,9 +124,9 @@ nav > ul {
 
 .three-lines-container {
     position: absolute;
-    height: 20px;
-    width: 23px;
-    display: inline-block;
+    height: 30px;
+    width: 50px;
+    padding: 0 14px 10px 14px;
     top: 0;
     left: 0;
     right: 0;
