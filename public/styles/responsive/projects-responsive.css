@@ -31,12 +31,21 @@
         height: 35%;
     }
 
-    /* left  */
+    .left-container {
+        display: flex;
+        flex-direction: column;
+    }
 
     .left-container > p {
         padding: 35px 10px 15px;
         font-size: 22pt;
+        height: 28%;
         background-color: #d6cfcd;
+    }
+
+    .left-bottom {
+        top: initial;
+        height: 72%;
     }
 
     .project {
@@ -70,9 +79,9 @@
         height: 65%;
     }
 
-    .project-detail > p {
-        display: none;
-    }
+    .move-down2, .moveUp2, .active2 {
+        top: 10px;
+    } 
 
     .active, .move-down4, .move-up4 {
         top: 0px;
@@ -80,7 +89,7 @@
 
     /* bottom nav */
     .bottom-nav {
-        height: 25%;
+        height: 23%;
     }
 
     .arrow-img {
@@ -90,13 +99,13 @@
     /* animation  */
 
     @keyframes moveUp {
-        from { top: 40px }
+        from { top: 10px }
         to { top: -200% }
     }
 
     @keyframes moveUp2 {
         from { top: 200% }
-        to { top: 40px }
+        to { top: 10px }
     }
 
     @keyframes moveUp3 {
@@ -110,13 +119,13 @@
     }
 
     @keyframes moveDown {
-        from { top: 40px }
+        from { top: 10px }
         to { top: 200% }
     }
 
     @keyframes moveDown2 {
         from { top: -200% }
-        to { top: 40px }
+        to { top: 10px }
     }
 
     @keyframes moveDown3 {
@@ -132,25 +141,17 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .left-container, .right-container {
-        height: 50%;
+    .left-container {
+        height: 45%;
     }
 
-    .left-container {
-        display: flex;
-        flex-direction: column;
+    .right-container {
+        height: 55%;
     }
 
     .left-container > p {
         padding: 30px 10px 15px;
         font-size: 16pt;
-        height: 28%;
-        background-color: #d6cfcd;
-    }
-
-    .left-bottom {
-        top: initial;
-        height: 72%;
     }
 
     .move-down2, .moveUp2, .active2 {
@@ -163,14 +164,18 @@
     }
 
     .technology {
-        font-size: 14pt;
-        margin: 10px 5px;
+        font-size: 12pt;
+        margin: 5px 5px 10px;
     }
 
     .project-link {
         font-size: 12pt;
         padding: 2pt;
         width: 100px;
+    }
+
+    .project-detail > p{
+        display: none;
     }
 
     .active, .move-down4, .move-up4 {

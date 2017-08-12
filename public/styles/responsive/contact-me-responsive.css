@@ -74,12 +74,20 @@
     .right-container {
         padding: 20px;
     }
-    
-    .underline-wrapper > a {
+
+    .underline-wrapper div a {
         font-size: 13pt;
     }
 
     .left-container > p {
         padding: 40px;
+    }
+    
+    .right-container > p {
+        font-size: 14pt;
+    }
+
+    .divider {
+        font-size: 16pt;
     }
 }
