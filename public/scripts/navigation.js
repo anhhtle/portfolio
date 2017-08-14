@@ -7,6 +7,7 @@ let closeNav = () => {
     nav.removeClass('animation-height');
     nav.addClass('animation-remove-height');
     navBackground.removeClass('height');
+    $('body').removeClass('noscroll');
     setTimeout(() => {
         menutoggle.addClass('hidden');
     }, 200);
@@ -24,6 +25,7 @@ $('.nav-toogle, .three-lines-container').click(() => {
     nav.removeClass('animation-remove-height');
     navBackground.addClass('height');
     nav.addClass('animation-height');
+    $('body').addClass('noscroll');
     setTimeout(() => {
         menutoggle.removeClass('hidden');
     }, 200);

@@ -33,6 +33,10 @@ main {
 .height {
     height: 100%;
 }
+
+.noscroll {
+    overflow: hidden;
+}
 /************ navigation ***************/
 .navigation-container {
     position: fixed;

@@ -24,3 +24,14 @@
         left: initial;
     }
 }
+
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+    nav ul li a {
+        padding: 20px 0;
+        font-size: 22pt;
+    }
+
+    .menutoggle {
+        top: 30px;
+    }
+}
