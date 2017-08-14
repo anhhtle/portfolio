@@ -32,6 +32,17 @@
     }
 
     .menutoggle {
-        top: 30px;
+        top: 25px;
+    }
+}
+
+@media only screen and (max-width: 650px) and (orientation: landscape) {
+    nav ul li a {
+        padding: 18px 0;
+        font-size: 20pt;
+    }
+
+    .menutoggle {
+        top: 20px;
     }
 }
